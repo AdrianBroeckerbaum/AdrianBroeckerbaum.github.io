@@ -13,4 +13,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: { outDir: '..' },
+  // needed for github pages just put the repo name here
+  base: '/AdrianBroeckerbaum/',
 })
